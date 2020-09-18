@@ -22,7 +22,7 @@
 
     <div>
       <mat-icon>contact_phone</mat-icon>
-      <span class="phone" *ngFor="let phone of resturant.phones">{{ phone }}</span>
+      <span *ngFor="let phone of resturant.phones">{{ phone }}</span>
     </div>
 
     <div class="address">
@@ -34,7 +34,7 @@
     </div>
 
     <div class="website">
-      <mat-icon>language</mat-icon>
+      <mat-icon>open_in_new</mat-icon>
       <a class="link" *ngFor="let website of resturant.websites" href="{{website}}" target="_blank">
         Website
       </a>
@@ -42,8 +42,7 @@
 
   </mat-card>
 </div>
+
 <ng-template #loading>
   <mat-spinner></mat-spinner>
 </ng-template>
-
-

@@ -55,5 +55,4 @@ describe('StartRatingComponent', () => {
     expect(halfStarIconElement.length).toBe(1);
     expect(emptyStarIconElement.length).toBe(1);
   });
-
 });

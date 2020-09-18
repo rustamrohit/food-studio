@@ -6,6 +6,7 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./start-rating.component.scss']
 })
 export class StartRatingComponent implements OnInit {
+
   @Input() public currentRating: number;
   public fullRatingCount: number;
   public halfRatingCount: number;
@@ -24,5 +25,4 @@ export class StartRatingComponent implements OnInit {
   public getArrayOfCount(count: number): number[] {
     return  count > 0 ? Array(count).fill(0).map((x, i) => i ) : [];
   }
-
 }
