@@ -1,4 +1,7 @@
 # FoodStudio
+Food Studio is web application where you can find overview of food Resturant.
+
+## Project creation
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
 
