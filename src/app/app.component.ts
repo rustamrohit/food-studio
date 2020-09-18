@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
+import { TitleService } from './services/title.service';
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -8,11 +10,14 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
 
-  public title = 'Food Studio';
+  public title: string;
 
   constructor(
     private readonly router: Router,
-  ) { }
+    private readonly titleService: TitleService
+  ) {
+    this.titleService.title$.subscribe((title) => this.title = title ? title : 'Food Studio');
+  }
 
   public onClick(): void {
     this.router.navigate(['/home']);

@@ -3,9 +3,10 @@ import { Component, OnInit } from '@angular/core';
 import { Observable } from 'rxjs';
 import { publishReplay, refCount } from 'rxjs/operators';
 
+import { environment } from '../../environments/environment';
+import { TitleService } from '../services/title.service';
 import { ResturantsService } from './resturants.service';
 import { Resturant } from './resturant.utils';
-import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'app-resturants',
@@ -17,8 +18,11 @@ export class ResturantsComponent implements OnInit {
   public resturants$: Observable<Resturant[]>;
 
   constructor(
-    private readonly resturantsService: ResturantsService
-  ) { }
+    private readonly resturantsService: ResturantsService,
+    private readonly titleService: TitleService
+  ) {
+    this.titleService.setTitle('Food Studio : Resturants');
+  }
 
   public ngOnInit(): void {
     this.resturants$ = this.resturantsService.getResturants().pipe(

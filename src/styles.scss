@@ -1,6 +1,10 @@
+html,body {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
 .app-body {
   margin: 0;
   background-color: #f3f3f3;
 }
-html, body {min-height: 100%;}
-body {background-size: cover;}

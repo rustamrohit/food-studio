@@ -7,9 +7,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
+import { TitleService } from './services/title.service';
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { HomeComponent } from './home/home.component';
 
     AppRoutingModule
   ],
+  providers: [ TitleService ],
   bootstrap: [ AppComponent ]
 })
 export class AppModule { }

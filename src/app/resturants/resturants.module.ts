@@ -8,6 +8,7 @@ import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
 import { MatChipsModule } from '@angular/material/chips';
 import { MatIconModule } from '@angular/material/icon';
 import { MatCardModule } from '@angular/material/card';
+import { ScrollingModule } from '@angular/cdk/scrolling';
 
 import { ResturantsRoutingModule } from './resturants-routing.module';
 import { ResturantsComponent } from './resturants.component';
@@ -24,6 +25,7 @@ import { StartRatingComponent } from '../start-rating/start-rating.component';
     HttpClientModule,
 
     GoogleMapsModule,
+    ScrollingModule,
 
     MatChipsModule,
     MatIconModule,
