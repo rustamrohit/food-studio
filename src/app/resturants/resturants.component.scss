@@ -1,0 +1,84 @@
+a {
+  text-decoration: none;
+}
+
+.mat-spinner {
+  position: relative;
+  margin: 10% 45%;
+}
+
+.name {
+  font-weight: bold;
+}
+
+.address {
+  padding: 8px 0;
+}
+
+.resturant {
+  padding-bottom: 24px;
+}
+
+.mat-icon {
+  vertical-align: middle;
+}
+
+.phone {
+  margin-left: 8px;;
+}
+
+h2 {
+  margin-bottom: 8px;
+}
+
+.website {
+  padding-bottom: 16px;
+}
+
+.link {
+  color: #3f51b5;
+}
+
+.link:hover {
+  color: #0d30f5;
+}
+
+.resturant-card {
+  width: 600px;
+  margin: 24px;
+}
+
+.cuisines {
+  padding-bottom: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.cuisine {
+  padding-right: 8px;
+}
+
+.card-flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.header-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.categories {
+  margin-bottom: 8px;
+}
+
+.rating {
+  padding-top: 24px;
+  padding-left: 16px;
+}
+

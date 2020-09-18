@@ -1,0 +1,6 @@
+<div *ngIf="currentRating !== undefined">
+  <mat-icon *ngFor="let fullRating of getArrayOfCount(fullRatingCount)" id="fullStarIcon">star</mat-icon>
+  <mat-icon *ngFor="let halfRating of getArrayOfCount(halfRatingCount)" id="halfStarIcon">star_half</mat-icon>
+  <mat-icon *ngFor="let emptyRating of getArrayOfCount(emptyRatingCount)" id="emptyStarIcon">star_border</mat-icon>
+  <span class="star-number">({{ currentRating | number : '1.0-2' }})</span>
+</div>
